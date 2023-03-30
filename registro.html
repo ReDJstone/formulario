@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <title>Formulario</title>
+</head>
+<body onload="checkForRegError()">
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="" class="active">Register</a>
+        <a href="login.html">Log in</a>
+        <a href="/index.html" style="float:right"> Back to Portfolio</a>
+    </div>
+    <form action="php/registro.php" method="post" style="padding-left: 16px">
+        <h1>User Registry:</h1>
+        <h3>DO NOT USE REAL INFORMATION.</h3>
+        <div class="desp_div">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" name="nombre">
+        </div><br>
+        <div class="desp_div">
+            <label for="user">Username:</label><br>
+            <input type="text" name="user">
+        </div><br>
+        <div class="desp_div">
+            <label for="email">Email:</label><br>
+            <input type="text" name="email">
+        </div><br>
+        <div class="desp_div">
+            <label for="tlf">Telefono:</label><br>
+            <input type="text" name="tlf">
+        </div><br>
+        <div class="desp_div">
+            <label for="passwd">Contraseña:</label><br>
+            <input type="text" name="passwd">
+        </div><br>
+
+        <div id="captcha">
+            <label for="captcha">CAPTCHA:</label><br>
+            <img id="captcha_img" src="php/imgGen.php">
+            <input type="button" value="Recargar" onclick="reloadCaptcha()">
+            <br><br>
+            <input type="text" name="numero">
+        </div>
+
+        <br>
+        <input type="submit" value="Enviar">
+        <h4 id="reg_status" class="error hidden"></h4>
+    </form>
+    <hr>
+    <script src="js/js.js"></script>
+</body>
+<footer style="text-align: center">
+    Página creada por: Amador Caballero
+</footer>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <button onclick="reloadCaptcha()">Recargar Captcha</button>
+        <form action="captcha.php" method="post">
+            <img id="captcha_img" src="imgGen.php">
+            <br><br>
+            Valor: <input type="text" name="numero">
+            <br><br>
+            <button type="submit">Enviar</button>
+        </form>
+        <script src="captcha.js"></script>
+    </body>
+</html>

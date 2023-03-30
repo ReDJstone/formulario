@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/css.css" rel="stylesheet">
+    </head>
+    <body onload="checkForLogin()">
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="registro.html">Register</a>
+        <a href="" class="active">Log in</a>
+        <a href="/index.html" style="float:right"> Back to Portfolio</a>
+    </div>
+    <form action="php/login.php" method="post" style="padding-left: 16px">
+        <h1>Log In:</h1>
+        <h4 id="login_status" class="hidden"></h4>
+        <div class="desp_div">
+            <label for="user">Username:</label><br>
+            <input type="text" name="user">
+        </div><br>
+        <div class="desp_div">
+            <label for="passwd">Contraseña:</label><br>
+            <input type="text" name="passwd">
+        </div><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <hr>
+    </body>
+    <footer style="text-align: center">
+        Página creada por: Amador Caballero
+    </footer>
+    <script src="js/js.js"></script>
+</html>
